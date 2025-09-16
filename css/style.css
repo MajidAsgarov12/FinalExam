@@ -688,12 +688,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .nav {
-    flex-direction: row;
-    padding: 10px 20px;
-    position: relative;
-  }
-
   .navlinks {
     display: none !important;
   }
@@ -710,16 +704,6 @@ footer {
     z-index: 1000;
   }
 
-  menu {
-    padding: 15px 20px;
-    position: relative;
-  }
-
-  menu li {
-    width: auto;
-    margin: 0 10px;
-  }
-
   .container {
     height: 70vh;
   }
@@ -728,16 +712,16 @@ footer {
     width: 80%;
     left: 50%;
     text-align: center;
+  }
 
-    h1 {
-      font-size: 40px;
-    }
+  .text h1 {
+    font-size: 40px;
+  }
 
-    .textbtn {
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-    }
+  .textbtn {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 
   .sectext1 {
@@ -757,12 +741,13 @@ footer {
     margin: 20px 0;
     padding-left: 0;
     width: 100%;
+  }
 
-    img {
-      width: 100%;
-      max-width: 300px;
-      padding: 5px;
-    }
+  .secimg img,
+  .secbotimg img {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
   }
 
   .sec4bg {
@@ -770,11 +755,11 @@ footer {
     height: auto;
     padding: 30px 0;
     text-align: center;
+  }
 
-    pre {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
+  .sec4bg pre {
+    font-size: 2.5em;
+    margin-bottom: 20px;
   }
 
   .feedbot {
@@ -795,14 +780,12 @@ footer {
 
   .contact-section {
     flex-direction: column;
-
-    .contact-form {
-      width: 100%;
-    }
   }
-}
 
-@media screen and (max-width: 480px) {
+  .contact-section .contact-form {
+    width: 100%;
+  }
+
   .nav {
     padding: 10px 15px;
   }
@@ -815,9 +798,10 @@ footer {
   menu {
     flex-direction: column;
     padding: 10px;
-    .menubtn {
-      display: none;
-    }
+  }
+
+  menu .menubtn {
+    display: none;
   }
 
   menu li {
@@ -833,48 +817,34 @@ footer {
 
   .text {
     width: 90%;
-
-    h1 {
-      font-size: 30px;
-    }
-
-    span {
-      font-size: 18px;
-    }
-
-    p {
-      font-size: 16px;
-    }
-
-    .textbtn .button,
-    .textbtn #hirebtn {
-      padding: 15px 30px;
-      font-size: 16px;
-    }
   }
 
-  .lefttext h1,
-  .righttext h1 {
-    font-size: 2rem;
+  .text h1 {
+    font-size: 30px;
+  }
+
+  .text span {
+    font-size: 18px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .textbtn .button,
+  .textbtn #hirebtn {
+    padding: 15px 30px;
+    font-size: 16px;
   }
 
   .righttext .contact-info a {
     font-size: 24px;
   }
 
-  .mainbody {
-    padding: 20px;
-
-    h1 {
-      font-size: 28px;
-      text-align: center;
-    }
-
-    .cards div {
-      width: 90%;
-      padding: 30px;
-      height: auto;
-    }
+  .mainbody .cards div {
+    width: 90%;
+    padding: 30px;
+    height: auto;
   }
 
   #sec3 .sectop {
@@ -901,7 +871,7 @@ footer {
   }
 
   footer {
-    height: auto;
+    height: 750px;
     padding: 30px 15px;
   }
 
