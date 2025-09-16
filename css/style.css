@@ -786,10 +786,6 @@ footer {
     width: 100%;
   }
 
-  .nav {
-    padding: 10px 15px;
-  }
-
   .menu-icon {
     right: 15px;
     font-size: 20px;
@@ -817,18 +813,15 @@ footer {
 
   .text {
     width: 90%;
-  }
-
-  .text h1 {
-    font-size: 30px;
-  }
-
-  .text span {
-    font-size: 18px;
-  }
-
-  .text p {
-    font-size: 16px;
+    h1 {
+      font-size: 30px;
+    }
+    span {
+      font-size: 18px;
+    }
+    p {
+      font-size: 16px;
+    }
   }
 
   .textbtn .button,
